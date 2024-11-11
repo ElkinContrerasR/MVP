@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuario</title>
+</head>
+<body>
+    <h1>Login de Usuario</h1>
+    <form id="loginForm">
+        <label for="nombreUsuario">Nombre de Usuario:</label>
+        <input type="text" id="nombreUsuario" required>
+
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" id="contrasenia" required>
+
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <p id="loginMessage"></p>
+
+    <!-- Botón para redirigir a la página de registro -->
+    <button onclick="window.location.href='registroUsuario.html'">Registrar</button>
+
+    <script src="Usuario.js"></script>
+</body>
+</html>

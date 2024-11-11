@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Contactos</title>
+</head>
+<body>
+    <h1>Mis Contactos</h1>
+
+    <!-- Botón para agregar un nuevo contacto -->
+    <button id="btnAgregar">Agregar Contacto</button>
+    
+    <!-- Contenedor donde se mostrarán los contactos -->
+    <div id="contactosList"></div>
+    
+    <!-- Formulario para agregar o editar contacto -->
+    <div id="formularioContacto" style="display: none;">
+        <h3 id="formTitle">Agregar/Editar Contacto</h3>
+        <form id="contactoForm">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" required>
+
+            <button type="submit" id="saveButton">Guardar</button>
+            <button type="button" id="cancelButton">Cancelar</button>
+        </form>
+    </div>
+
+    <button onclick="window.location.href='Usuario.html'">Cerrar sesión</button>
+
+    <script src="Contacto.js"></script>
+</body>
+</html>
