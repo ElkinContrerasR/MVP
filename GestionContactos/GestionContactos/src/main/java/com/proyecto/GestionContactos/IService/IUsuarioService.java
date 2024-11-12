@@ -23,8 +23,8 @@ public interface IUsuarioService {
     //Eliminar
     void delete(Integer id);
 
-
-    Optional<Usuario> authenticate(String nombreUsuario, String contrasenia);  // Nuevo método
+    
+    Optional<Usuario> authenticate(String nombreUsuario, String contrasenia);  
 
 
 

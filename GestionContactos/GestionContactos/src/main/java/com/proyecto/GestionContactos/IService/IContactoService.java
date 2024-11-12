@@ -21,6 +21,7 @@ public interface IContactoService {
     //Eliminar
     void delete(Integer id);
 
+    //Mostrar por nombre
     List<Contacto> findByUsuario(String nombreUsuario);
 
 
