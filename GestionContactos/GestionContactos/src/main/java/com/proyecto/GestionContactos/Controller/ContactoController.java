@@ -38,9 +38,13 @@ public class ContactoController {
         service.update(contacto, id);
     }
 
-    @GetMapping("")
+    /*@GetMapping("")
     public List<Contacto> findByUsuario(@RequestParam String nombreUsuario) {
         return service.findByUsuario(nombreUsuario);
+    }*/
+    @GetMapping("")
+    public List<Contacto> all(){
+        return service.all();
     }
 
 
